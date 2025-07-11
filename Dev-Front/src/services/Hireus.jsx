@@ -22,7 +22,7 @@ const Hireus = ({emailSubject}) => {
 
  const onSubmit = async (data, e) => {
   try {
-    const res = await fetch("https://backend-b3n8.onrender.com/hireus", {
+    const res = await fetch("http://localhost:1313//hireus", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

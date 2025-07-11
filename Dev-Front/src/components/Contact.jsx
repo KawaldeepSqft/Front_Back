@@ -12,7 +12,7 @@ const Contact = () => {
 
   const onSubmit = async (data, e) => {
     try {
-      const res = await fetch("https://backend-b3n8.onrender.com/contact", {
+      const res = await fetch("http://localhost:1313/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

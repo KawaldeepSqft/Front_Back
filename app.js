@@ -11,16 +11,19 @@ connectDB();
 
 app.use(express.json()); // ⬅️ Required for JSON body
 const cors = require("cors");
-app.use(cors());
 
-const PORT = process.env.PORT || 1313;
+app.use(cors({
+  origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  credentials: true
+}));
 
 
-app.use(express.static(path.join(__dirname, "Dev-Front", "dist")));
+app.use(express.static(path.join(__dirname, 'Dev-Front/dist')));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "Dev-Front", "dist", "index.html"));
+app.get(/^\/(?!api).*/, (req, res) => {
+  res.sendFile(path.join(__dirname, 'Dev-Front/dist/index.html'));
 });
+
 
 // Test route
 app.get("/", (req, res) => {
@@ -96,7 +99,7 @@ app.post("/hireus", async (req, res) => {
 });
 
 
-
+const PORT = 1313
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
