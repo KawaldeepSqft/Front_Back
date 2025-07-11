@@ -12,7 +12,7 @@ const Contact = () => {
 
   const onSubmit = async (data, e) => {
     try {
-      const res = await fetch("http://localhost:1313/contact", {
+      const res = await fetch("https://front-back-er5m.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
