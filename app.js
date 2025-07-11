@@ -13,8 +13,8 @@ app.use(express.json()); // ⬅️ Required for JSON body
 const cors = require("cors");
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
   origin: "https://front-back-er5m.onrender.com",
+  origin: process.env.FRONTEND_URL || "http://localhost:5173",
   credentials: true
 }));
 
