@@ -5,7 +5,7 @@ const Contact = require("./model/Contact"); // ⬅️ Model import
 const HireUs = require("./model/HireUs");
 const app = express();
 const sendEmail = require("./utils/sendEmail");
-
+const path = require('path');
 dotenv.config();
 connectDB();
 
@@ -16,8 +16,10 @@ app.use(cors());
 const PORT = process.env.PORT || 1313;
 
 
-
-
+app.use(express.static(path.join(__dirname, 'Dev-Front/dist')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Dev-Front/dist/index.html'));
+});
 
 // Test route
 app.get("/", (req, res) => {
