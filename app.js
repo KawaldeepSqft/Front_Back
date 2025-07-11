@@ -16,9 +16,10 @@ app.use(cors());
 const PORT = process.env.PORT || 1313;
 
 
-app.use(express.static(path.join(__dirname, 'Dev-Front/dist')));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Dev-Front/dist/index.html'));
+app.use(express.static(path.join(__dirname, "Dev-Front", "dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "Dev-Front", "dist", "index.html"));
 });
 
 // Test route
