@@ -13,10 +13,10 @@ app.use(express.json()); // ⬅️ Required for JSON body
 const cors = require("cors");
 
 app.use(cors({
-  origin: "https://front-back-er5m.onrender.com",
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
-  credentials: true
+  origin: process.env.FRONTEND_URL,
+  credentials: true,
 }));
+
 
 
 app.use(express.static(path.join(__dirname, 'Dev-Front/dist')));

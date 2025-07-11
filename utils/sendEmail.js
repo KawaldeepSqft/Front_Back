@@ -9,6 +9,7 @@ const sendEmail = async ({ to, subject, html }) => {
     },
   });
 
+  // testing 
   const mailOptions = {
     from: `"Adsadapt India" <${process.env.MAIL_USER}>`,
     to :"kawaldeep8395@gmail.com",
