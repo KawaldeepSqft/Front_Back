@@ -120,7 +120,7 @@ const About = () => {
 
           <div className="flex flex-col justify-center sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
             <div>
-              <a href="/Marketing-Website/#contact" className="">
+              <a href="/#contact" className="">
                 <CtaButton name={"Get Started"} />
               </a>
             </div>

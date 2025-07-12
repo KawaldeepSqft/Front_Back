@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import team1 from "../img/team/team-1.jpg";
-import team2 from "../img/team/team-2.jpg";
-import team3 from "../img/team/team-3.jpg";
-import team4 from "../img/team/team-4.jpg";
+import team1 from "../img/ImgSec/Dev.jpg";
+import team2 from "../img/ImgSec/Lovedeep.png";
+import team3 from "../img/ImgSec/Kawaldeep.jpeg";
+
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,10 +32,10 @@ const Team = () => {
       </p>
 
       <div className="flex flex-col xs:flex-row gap-6 p-5 lg:p-0 items-center">
-        <TeamImage image={team1} name={"Walter White"} role={"Cheif Executive Officer"} />
-        <TeamImage image={team2} name={"Sarah Jhonson"} role={"Product Manager"} />
-        <TeamImage image={team3} name={"William Anderson"} role={"CTO"} />
-        <TeamImage image={team4} name={"Amanda Jepson"} role={"Accountant"} />
+        <TeamImage  image={team1} name={"Dev Pawar"} role={"Director"} />
+        <TeamImage image={team2} name={"Lovedeep Singh"} role={"Managing Director "} />
+        <TeamImage image={team3} name={"Kawaldeep Singh"} role={"CTO"} />
+        {/* <TeamImage image={team4} name={"Amanda Jepson"} role={"Accountant"} /> */}
       </div>
     </div>
   );

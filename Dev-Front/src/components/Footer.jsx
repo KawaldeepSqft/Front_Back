@@ -18,7 +18,7 @@ const Footer = () => {
       {/* Brand Info */}
       <div data-aos="fade-right">
         <h1 className="text-xl font-light mb-3">Adsadapt India</h1>
-        <p className="mb-1">Gurgaon, Haryana</p>
+        <p className="mb-1">Spaze Itech Park, Sector 49, Gurgaon  Haryana</p>
         <p className="mb-5">India - 122001</p>
 
         <div>

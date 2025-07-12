@@ -63,7 +63,7 @@ const Contact = () => {
             <div>
               <h2 className="lg:text-xl font-semibold">Address</h2>
               <p className="text-sm text-slate-800">
-                A108 Adam Street, New York, NY 535022
+               SPAZE ITECH PARK, SECTOR 49, GURGAON
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Contact = () => {
             </div>
             <div>
               <h2 className="lg:text-xl font-semibold">Call Us</h2>
-              <p className="text-sm text-slate-800">+1 5589 55488 55</p>
+              <p className="text-sm text-slate-800">+91 9625144157</p>
             </div>
           </div>
 
@@ -92,7 +92,7 @@ const Contact = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14010.76256980872!2d77.22260515427726!3d28.60905606083753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2db961be393%3A0xf6c7ef5ee6dd10ae!2sIndia%20Gate%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1717776828829!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.3928820397173!2d77.04100488016894!3d28.412988449580205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d229aeba0bcbb%3A0xc7c82ac32b24b289!2sSPAZE%20ITECH%20PARK%2C%20Sector%2049%2C%20Gurugram%2C%20Haryana%20122018!5e1!3m2!1sen!2sin!4v1752300453597!5m2!1sen!2sin"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>

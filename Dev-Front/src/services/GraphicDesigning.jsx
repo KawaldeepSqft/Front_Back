@@ -1,6 +1,6 @@
 import React from "react";
 import Template from "./Template";
-import appImage from "../img/portfolio/app-1.jpg";
+import appImage from "../img//ImgSec/Graphic Designing.avif";
 import NavBar from "../components/NavBar";
 import Contact from "../components/Contact";
 import Newsletter from "../components/Newsletter";

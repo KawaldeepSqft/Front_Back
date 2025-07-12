@@ -1,6 +1,6 @@
 import React from "react";
 import Template from "./Template";
-import image from "../img/portfolio/app-1.jpg";
+import image from "../img/ImgSec/videoEditng.webp";
 import NavBar from "../components/NavBar";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
