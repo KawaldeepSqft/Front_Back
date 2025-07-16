@@ -32,7 +32,7 @@ const Team = () => {
       </p>
 
       <div className="flex flex-col xs:flex-row gap-6 p-5 lg:p-0 items-center">
-        <TeamImage  image={team1} name={"Dev Pawar"} role={"Director"} />
+        <TeamImage  image={team1} name={"Dev Pawar"} role={"Founder & Director"} />
         <TeamImage image={team2} name={"Lovedeep Singh"} role={"Managing Director "} />
         <TeamImage image={team3} name={"Kawaldeep Singh"} role={"CTO"} />
         {/* <TeamImage image={team4} name={"Amanda Jepson"} role={"Accountant"} /> */}

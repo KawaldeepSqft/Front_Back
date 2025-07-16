@@ -73,7 +73,7 @@ const Services = ({setSubj}) => {
         }}>
           <Card
             img={<HiOutlineChartPie />}
-            title={"Graphic Designing	"}
+            title={"Graphic Design"}
             desc={
               "Creative and eye-catching logos, banners, social media creatives, ad designs, brochures, and business cards to make your brand stand out."
             }
