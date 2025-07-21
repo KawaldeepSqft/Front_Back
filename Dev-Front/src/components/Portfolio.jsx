@@ -48,27 +48,27 @@ const Portfolio = () => {
 
       {/* Grid of Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-5 mb-10">
-        <div data-aos="fade-up" onClick={() => navigate("portfolio/app1")}>
+        <div data-aos="fade-up" >
           <PortfolioProduct image={app1} title="Education" />
         </div>
 
-        <div data-aos="fade-up" onClick={() => navigate("portfolio/product1")}>
+        <div data-aos="fade-up" >
           <PortfolioProduct image={app2} title="Real Estate" />
         </div>
 
-        <div data-aos="fade-up" onClick={() => navigate("portfolio/brand1")}>
+        <div data-aos="fade-up" >
           <PortfolioProduct image={app3} title="Manufacturing" />
         </div>
 
-        <div data-aos="fade-up" onClick={() => navigate("portfolio/book1")}>
+        <div data-aos="fade-up" >
           <PortfolioProduct image={product1} title="Interior Designers" />
         </div>
 
-        <div data-aos="fade-up" onClick={() => navigate("portfolio/app2")}>
+        <div data-aos="fade-up" >
           <PortfolioProduct image={branding1} title="Dental Clinic" />
         </div>
 
-        <div data-aos="fade-up" onClick={() => navigate("portfolio/book3")}>
+        <div data-aos="fade-up" >
           <PortfolioProduct image={product3} title="Doctors" />
         </div>
       </div>
