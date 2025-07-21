@@ -32,7 +32,7 @@ const Team = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-5">
         <TeamImage image={team1} name={"Dev Pawar"} role={"Founder & Director"} />
         <TeamImage image={team2} name={"Lovedeep Singh"} role={"Managing Director"} />
-        <TeamImage image={team3} name={"Kawaldeep Singh"} role={"CTO"} />
+        <TeamImage image={team3} name={"Kawaldeep Singh"} role={"IT / Develoment"} />
       </div>
     </div>
   );
