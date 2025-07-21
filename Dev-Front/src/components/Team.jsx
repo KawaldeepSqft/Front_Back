@@ -7,15 +7,12 @@ import team3 from "../img/ImgSec/Kawaldeep.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// custom styles
-import "./Team.css";
+// component
 import TeamImage from "./TeamImage";
 
 const Team = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
+    AOS.init({ duration: 1200 });
   }, []);
 
   return (
@@ -31,11 +28,11 @@ const Team = () => {
         Aspirants
       </p>
 
-      <div className="flex flex-col xs:flex-row gap-6 p-5 lg:p-0 items-center">
-        <TeamImage  image={team1} name={"Dev Pawar"} role={"Founder & Director"} />
-        <TeamImage image={team2} name={"Lovedeep Singh"} role={"Managing Director "} />
+      {/* Responsive Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-5">
+        <TeamImage image={team1} name={"Dev Pawar"} role={"Founder & Director"} />
+        <TeamImage image={team2} name={"Lovedeep Singh"} role={"Managing Director"} />
         <TeamImage image={team3} name={"Kawaldeep Singh"} role={"CTO"} />
-        {/* <TeamImage image={team4} name={"Amanda Jepson"} role={"Accountant"} /> */}
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const Footer = () => {
             Phone: <span className="font-normal ml-1">+91 9625144157</span>
           </p>
           <p className="font-medium">
-            Email: <span className="font-normal ml-1">info@yourbrand.com</span>
+            Email: <span className="font-normal ml-1">contact@adsadaptindia.com</span>
           </p>
         </div>
       </div>

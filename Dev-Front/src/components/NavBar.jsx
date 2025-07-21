@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import CtaButton from "./CtaButton";
 import { useNavigate } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import logo from "./logo.png"
+import "../components/list.css"
 const NavBar = () => {
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ const NavBar = () => {
         href="/"
         className="lg:text-1xl text-2xl tracking-wide font-light text-[#7A6960]"
       >
-        Adsadapt India
+        <img className="logo-main" src={logo} alt="logo" />
       </a>
       {/* menu */}
       <div className="lg:flex items-center justify-between lg:gap-14 hidden">
