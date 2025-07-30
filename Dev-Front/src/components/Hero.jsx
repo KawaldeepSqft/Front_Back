@@ -1,50 +1,41 @@
-import React, { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
-import CtaButton from "./CtaButton";
-import VideoBtn from "./VideoBtn";
-import img from "../img/hero-img.svg";
-
-// aos
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
-// import video
-// import video from "../img/video/funny.mp4";
-
-
+import img1 from "./hero-img.jpg";
 
 const Hero = () => {
-  const myElement = useRef(null);
   useEffect(() => {
     AOS.init();
-  });
+  }, []);
+
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-center lg:gap-10 secondary-font relative">
+    <section
+      className="h-screen w-full bg-cover bg-center flex items-center justify-start px-4 md:px-16"
+      style={{
+        backgroundImage: `url(${img1})`,
+        backgroundColor: "rgb(234 88 12)",
+      }}
+    >
       <div
-        data-aos="fade-right"
-        data-aos-duration="1200"
-        className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0"
+        className="w-full md:max-w-3xl bg-white/30 backdrop-blur-lg border border-white/20 shadow-lg px-6 md:px-10 py-7 rounded-2xl text-white"
+        data-aos="fade-up"
       >
-        <h1 className="text-[#7A6960] md:text-5xl text-3xl font-semibold">
-         Boost Your Online Presence & Get More Leads
+        <h1 className="text-3xl md:text-5xl font-bold text-white">
+          Boost Your Online Presence & Get More Leads
         </h1>
-        <p className="text-xl mt-5 text-gray-600 primary-font">
+        <p className="text-lg md:text-xl mt-4 text-white">
           We offer Website Development, SEO, Social Media Marketing, PPC Ads, Graphic Designing & more to drive real business results for you.
         </p>
-        <div className="flex flex-col sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
-          <a href="#contact" className="">
-            <CtaButton name={"Get Started"} />
+        <div className="mt-8">
+          <a
+            href="#contact"
+            className="inline-block bg-white text-orange-600 font-semibold px-6 py-3 rounded-full hover:bg-orange-100 transition"
+          >
+            Get Started
           </a>
         </div>
       </div>
-
-      <div className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0">
-        <img ref={myElement} className="w-full animate hero-img-section" src={img} alt="img" />
-      </div>
-
-     
-    </div>
+    </section>
   );
 };
 

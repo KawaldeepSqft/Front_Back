@@ -24,7 +24,7 @@ const Home = ({subject,setSubject}) => {
             </Helmet>
       
       <NavBar />
-      <section className="w-full max-h-fit pt-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
+      <section >
         <Hero />
       </section>
       <section id="about" className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
