@@ -1,6 +1,6 @@
 import React from "react";
 import Template from "./Template";
-import image from "../img/ImgSec/SMM.jpg";
+// import image from "../img/ImgSec/SMM.jpg btay";
 import NavBar from "../components/NavBar";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";

@@ -8,20 +8,17 @@ import img from "../img/hero-img.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 // import video
-import video from "../img/video/funny.mp4";
+// import video from "../img/video/funny.mp4";
+
+
 
 const Hero = () => {
   const myElement = useRef(null);
-
- 
- 
-
   useEffect(() => {
     AOS.init();
   });
-
-
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center lg:gap-10 secondary-font relative">
       <div
@@ -43,7 +40,7 @@ const Hero = () => {
       </div>
 
       <div className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0">
-        <img ref={myElement} className="w-full animate" src={img} alt="img" />
+        <img ref={myElement} className="w-full animate hero-img-section" src={img} alt="img" />
       </div>
 
      

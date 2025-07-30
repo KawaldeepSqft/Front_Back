@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { IoLogoTwitter, IoLogoLinkedin } from "react-icons/io";
 import { IoLogoFacebook, IoLogoInstagram } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -62,9 +63,9 @@ const Footer = () => {
           Stay connected for the latest updates, offers, and digital marketing tips.
         </p>
         <div className="flex gap-2 pr-5 mt-5">
-          {/* <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
-            <IoLogoTwitter size={"26px"} />
-          </div> */}
+          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
+           <a href="https://x.com/AdsAdaptIndia?t=qgE0vmBnBYzDyLmsPh51LA&s=08"> <FaXTwitter  size={"26px"} /> </a>
+          </div>
 
           <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
            <a href="https://www.facebook.com/profile.php?id=61577727865065"> <IoLogoFacebook size={"26px"} /></a>
